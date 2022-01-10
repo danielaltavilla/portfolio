@@ -1,6 +1,6 @@
 # portfolio
 
-Daniel Altavilla professional portfolio
+Daniel Altavilla professional portfolio link: https://danielaltavilla.github.io/portfolio/
 
 ## Includes work from challenges in UM Coding Bootcamp and personal projects.
 
