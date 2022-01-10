@@ -138,7 +138,7 @@ section {
     margin-right: auto;
 }
 
-.contact h4 {
+.contact h3 {
     border: 1px;
     padding: 10px 20px;
     text-align: center;
@@ -146,7 +146,43 @@ section {
 
 /* Contact form styles */
 
-.contact-form {
+.contact {
+    background-color: var(--secondary-color);
+}
+
+.contact h2 {
+    color: var(--primary-color);
+}
+
+.contact-body div {
+    color: white;
+}
+
+.contact h4 {
+    color: var(--primary-color);
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    margin: 15px;
+}
+
+.contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 18px;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.contact-form input, .contact-form textarea {
     border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
@@ -158,14 +194,13 @@ section {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form:focus {
+.contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255, 255, 255, 1);
-    outline: none;
 }
 
 button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -173,7 +208,84 @@ button {
 }
 
 button:hover {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 
+/* Projects (work) Styles */
+
+
+.projects {
+    background: var(--primary-color);
+}
+
+.project {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project:hover {
+    color:var(--primary-color);
+}
+
+.project h3 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    flex: 1 30%;
+}
+
+.project-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.project-img img {
+    height: 300px;
+    width: 300px;
+}
+
+.project-text {
+    flex: 12;
+}
+
+.project-text h4 {
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
+
+.project-text h3 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+
+.coaching img {
+    width: 1000px;
+    height:1000px;
+}
+
+.flex-row {
+    display: inline-flexbox;
+}
