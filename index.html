@@ -36,18 +36,64 @@
         </section>
 
         <!--About Me section-->
-        <section id="about-me" class="about">
-            <h2 class="section-title secondary-border">About Me</h2>
+        <section id="about-me" class="intro">
+            <div class="flex-row">
+            <h2 class="section-title primary-border">About Me</h2>
+            </div>
+
+            <div class="flex-row">
+                <p>
+                    My name is Daniel Altavilla, I am a 25 year-old from Hollywood, Florida. <br />
+                    I am passionate about web development because I am a thinker and a problem solver. When I want something accomplished, 
+                    I will work tirelessly to achieve that result. <br />
+                    Web development is not only my passion, but my hobby - some personal applications include modding video games like Super Mario for my little brother, creating personal web pages for my side jobs, and even making bots on Discord to notify me when people have purchased items from me on various websites. <br />
+                    I have a strong work ethic, and that is reflected heavily in the projects I have available for you to see below. <br />
+                    My hobbies outside of programming include fitness, gaming, listening to and creating music, and spending time with family.
+                </p>
+                </div>
+                <div style="vertical-align:middle; text-align:center">
+                <img src="assets/images/danny.jpg" alt="Daniel Altavilla arms crossed professional pose"  />
+            </div>
         </section>
 
         <!--Work section-->
         <section id="work">
+            <div class="flex-row">
             <h2 class="section-title secondary-border">Work</h2>
+            </div>
+
+            <div class="projects">
+                <article class="first-project">
+                    <img src="assets/images/coach.jpg" alt="coach with whistle and timer">
+                </article>
+            </div>
+
+
         </section>
         
         <!-- Contact Me section-->
         <section id="contact-me" class="contact">
             <h2 class="section-title secondary-border">Contact Me</h2>
+
+            <h4> Feel free to leave your information in the form below, along with any inquiries. <br />
+                Alternatively, you are welcome to reach out 
+                to me first with any questions or concerns.</h4>
+
+            <form>
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" placeholder="Name" class="contact-form"/>
+
+                <label for="contact-number">Phone Number</label>
+                <input type="tel" id="contact-number" placeholder="Phone Number" class="contact-form" />
+
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="Email Address" class="contact-form" />
+
+                <button type="submit">
+                    Contact Me!
+                </button>
+            </form>
+
         </section>
 
         <!-- Resume section -->
@@ -56,6 +102,9 @@
         </section>
 
     <footer>
+        <h2>
+            Daniel Altavilla LLC &copy;
+        </h2>
     </footer>
     </body>
 </html>

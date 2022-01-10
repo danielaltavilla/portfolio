@@ -1,6 +1,7 @@
 :root {
-    --primary-color: gray;
-    --secondary-color: rgb(248, 19, 19);
+    --primary-color: #FFFDD0;
+    --secondary-color: #CC5500;
+    --tertiary-color: #88232B;
 }
 
 
@@ -11,7 +12,7 @@
 }
 
 body {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -34,6 +35,7 @@ header h1 {
     font-size: 50px;
     margin: 0;
     color: var(--primary-color);
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
 }
 
 header a {
@@ -57,6 +59,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.6vw;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
 }
 
 header nav ul li a:hover {
@@ -66,9 +69,42 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
 section {
     padding: 60px;
 }
+
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.primary-border {
+    border-color: var(--tertiary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
 
 /* Hero Styles */
 .hero {
@@ -78,4 +114,66 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
     background-position: 80%;
-}s
+}
+
+/* Hero Style end */
+
+.intro {
+    display: block;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro img {
+    min-width: 40%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact h4 {
+    border: 1px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Contact form styles */
+
+.contact-form {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
